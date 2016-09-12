@@ -1,4 +1,4 @@
-exports.showExampleMessage = function () {
+exports.getExampleMessage = function () {
   return 'This is an example message from the example package.'
 }
 
