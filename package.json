@@ -1,0 +1,26 @@
+{
+  "name": "string-reversal-example",
+  "version": "1.0.0",
+  "description": "String reversal example for NodeJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheeeng/string-reversal-example.git"
+  },
+  "keywords": [
+    "[",
+    "string",
+    "reverse",
+    "example",
+    "]"
+  ],
+  "author": "Leonard Lee <leonardlee@outlook.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/sheeeng/string-reversal-example/issues"
+  },
+  "homepage": "https://github.com/sheeeng/string-reversal-example#readme"
+}
