@@ -1,10 +1,12 @@
 {
   "name": "string-reversal-example",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "String reversal example for NodeJS.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard",
+    "test": "test.js",
+    "posttest": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/sheeeng/string-reversal-example/issues"
   },
-  "homepage": "https://github.com/sheeeng/string-reversal-example#readme"
+  "homepage": "https://github.com/sheeeng/string-reversal-example#readme",
+  "dependencies": {
+    "standard": "^8.0.0"
+  }
 }
