@@ -11,11 +11,9 @@
     "url": "git+https://github.com/sheeeng/string-reversal-example.git"
   },
   "keywords": [
-    "[",
     "string",
     "reverse",
-    "example",
-    "]"
+    "example"
   ],
   "author": "Leonard Lee <leonardlee@outlook.com>",
   "license": "GPL-3.0",
