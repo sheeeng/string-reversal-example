@@ -1,6 +1,6 @@
 {
   "name": "string-reversal-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "String reversal example for NodeJS.",
   "main": "index.js",
   "scripts": {
