@@ -1,8 +1,7 @@
-exports.getExampleMessage = function () {
-  return 'This is an example message from the example package.'
-}
+var echo = require('./app/echo-mock-messages.js')
+module.exports.echoMockMessage = echo.echoMockMessage
+module.exports.echoRedFiveStandingBy = echo.echoRedFiveStandingBy
+module.exports.echoFeelTheForce = echo.echoFeelTheForce
 
-var reverseString = function (s) {
-  return s.split('').reverse().join('')
-}
-module.exports.reverseString = reverseString
+var reverse = require('./app/reverse-string.js')
+module.exports.reverseString = reverse.reverseString

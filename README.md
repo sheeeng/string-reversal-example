@@ -8,3 +8,22 @@
 String reversal example for NodeJS.
 
 Do *not* use in production code.
+
+Usage:
+
+    const sr = require('string-reversal-example')
+
+    console.log(sr.echoMockMessage())
+    console.log(sr.echoRedFiveStandingBy())
+    console.log(sr.echoFeelTheForce())
+
+    var mockString = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+
+    console.log(sr.reverseString(mockString))
+
+Output:
+
+    This is an example message from the example package.
+    Red Five standing by.
+    Feel the Force!
+    .tile gnicsipida rutetcesnoc ,tema tis rolod muspi meroL
