@@ -36,8 +36,16 @@ describe('Reversal', function () {
     it('should reverse the string', function () {
       var rs = require('../app/reverse-string.js')
       var mockString = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-      var reversedMockString = '.tile gnicsipida rutetcesnoc ,tema tis rolod muspi meroL'
-      assert.equal(rs.reverseString(mockString), reversedMockString)
+      var reversedMockString1 = '.tile gnicsipida rutetcesnoc ,tema tis rolod muspi meroL'
+      assert.equal(rs.reverseString(mockString), reversedMockString1)
+
+      var emm = require('../app/echo-mock-messages.js')
+      var reversedMockString2 = ".egakcap elpmaxe eht morf egassem elpmaxe na si sihT"
+      assert.equal(rs.reverseString(emm.echoMockMessage()), reversedMockString2)
+      var reversedMockString3 = ".yb gnidnats eviF deR"
+      assert.equal(rs.reverseString(emm.echoRedFiveStandingBy()), reversedMockString3)
+      var reversedMockString4 = "!ecroF eht leeF"
+      assert.equal(rs.reverseString(emm.echoFeelTheForce()), reversedMockString4)
     })
   })
 })
