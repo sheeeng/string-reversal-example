@@ -20,6 +20,9 @@ Usage:
     var mockString = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 
     console.log(sr.reverseString(mockString))
+    console.log(sr.reverseString(sr.echoMockMessage()))
+    console.log(sr.reverseString(sr.echoRedFiveStandingBy()))
+    console.log(sr.reverseString(sr.echoFeelTheForce()))
 
 Output:
 
@@ -27,3 +30,6 @@ Output:
     Red Five standing by.
     Feel the Force!
     .tile gnicsipida rutetcesnoc ,tema tis rolod muspi meroL
+    .egakcap elpmaxe eht morf egassem elpmaxe na si sihT
+    .yb gnidnats eviF deR
+    !ecroF eht leeF
