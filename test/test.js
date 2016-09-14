@@ -15,35 +15,58 @@ describe('Messages', function () {
       assert.equal(mockString1, emm.echoMockMessage())
     })
   })
+  describe('#echoLoremIpsum()', function () {
+    it('should get lorem ipsum mock message', function () {
+      var emm = require('../app/echo-mock-messages.js')
+      var mockString2 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+      assert.equal(mockString2, emm.echoLoremIpsum())
+    })
+  })
   describe('#echoRedFiveStandingBy()', function () {
     it('should get another message', function () {
       var emm = require('../app/echo-mock-messages.js')
-      var mockString2 = 'Red Five standing by.'
-      assert.equal(mockString2, emm.echoRedFiveStandingBy())
+      var mockString3 = 'Red Five standing by.'
+      assert.equal(mockString3, emm.echoRedFiveStandingBy())
     })
   })
   describe('#echoFeelTheForce()', function () {
     it('should get yet another message', function () {
       var emm = require('../app/echo-mock-messages.js')
-      var mockString3 = 'Feel the Force!'
-      assert.equal(mockString3, emm.echoFeelTheForce())
+      var mockString4 = 'Feel the Force!'
+      assert.equal(mockString4, emm.echoFeelTheForce())
     })
   })
 })
 
 describe('Reversal', function () {
-  describe('#reverseString()', function () {
+  describe('#reverseMockMessage()', function () {
     it('should reverse the string', function () {
       var rs = require('../app/reverse-string.js')
-      var mockString = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-      var reversedMockString1 = '.tile gnicsipida rutetcesnoc ,tema tis rolod muspi meroL'
-      assert.equal(rs.reverseString(mockString), reversedMockString1)
-
       var emm = require('../app/echo-mock-messages.js')
-      var reversedMockString2 = ".egakcap elpmaxe eht morf egassem elpmaxe na si sihT"
-      assert.equal(rs.reverseString(emm.echoMockMessage()), reversedMockString2)
+      var reversedMockString1 = ".egakcap elpmaxe eht morf egassem elpmaxe na si sihT"
+      assert.equal(rs.reverseString(emm.echoMockMessage()), reversedMockString1)
+    })
+  })
+  describe('#reverseLoremIpsum()', function () {
+    it('should reverse the string', function () {
+      var rs = require('../app/reverse-string.js')
+      var emm = require('../app/echo-mock-messages.js')
+      var reversedMockString2= '.tile gnicsipida rutetcesnoc ,tema tis rolod muspi meroL'
+      assert.equal(rs.reverseString(emm.echoLoremIpsum()), reversedMockString2)
+    })
+  })
+  describe('#reverseRedFiveStandingBy()', function () {
+    it('should reverse the string', function () {
+      var rs = require('../app/reverse-string.js')
+      var emm = require('../app/echo-mock-messages.js')
       var reversedMockString3 = ".yb gnidnats eviF deR"
       assert.equal(rs.reverseString(emm.echoRedFiveStandingBy()), reversedMockString3)
+    })
+  })
+  describe('#reverseFeelTheForce()', function () {
+    it('should reverse the string', function () {
+      var rs = require('../app/reverse-string.js')
+      var emm = require('../app/echo-mock-messages.js')
       var reversedMockString4 = "!ecroF eht leeF"
       assert.equal(rs.reverseString(emm.echoFeelTheForce()), reversedMockString4)
     })

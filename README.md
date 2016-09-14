@@ -14,22 +14,22 @@ Usage:
     const sr = require('string-reversal-example')
 
     console.log(sr.echoMockMessage())
+    console.log(sr.echoLoremIpsum())
     console.log(sr.echoRedFiveStandingBy())
     console.log(sr.echoFeelTheForce())
 
-    var mockString = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-
-    console.log(sr.reverseString(mockString))
     console.log(sr.reverseString(sr.echoMockMessage()))
+    console.log(sr.reverseString(sr.echoLoremIpsum()))
     console.log(sr.reverseString(sr.echoRedFiveStandingBy()))
     console.log(sr.reverseString(sr.echoFeelTheForce()))
 
 Output:
 
     This is an example message from the example package.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Red Five standing by.
     Feel the Force!
-    .tile gnicsipida rutetcesnoc ,tema tis rolod muspi meroL
     .egakcap elpmaxe eht morf egassem elpmaxe na si sihT
+    .tile gnicsipida rutetcesnoc ,tema tis rolod muspi meroL
     .yb gnidnats eviF deR
     !ecroF eht leeF
