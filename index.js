@@ -1,5 +1,6 @@
 var echo = require('./app/echo-mock-messages.js')
 module.exports.echoMockMessage = echo.echoMockMessage
+module.exports.echoLoremIpsum = echo.echoLoremIpsum
 module.exports.echoRedFiveStandingBy = echo.echoRedFiveStandingBy
 module.exports.echoFeelTheForce = echo.echoFeelTheForce
 
